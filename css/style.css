@@ -1,0 +1,115 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    display: grid;
+    grid-template-areas: "cabecalho cabecalho"
+                         "image cadastro"
+                         " image footer";
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    height: 100vh;
+    background: url(../images/bg-desktop.svg) center center no-repeat;
+    background-size: cover;
+}
+
+
+.header{
+    grid-area: cabecalho;
+    margin: 20px 50px;
+
+}
+
+.header img {
+    background-color: rgba(128, 0, 128, 0.608);
+    height: 40px;
+    border-radius: 10px;
+}
+
+.image{
+    grid-area: image;
+}
+
+.image .ilustration {
+    max-width: 600px;
+    margin: auto;
+}
+
+.image .ilustration img {
+    width: 100%;
+}
+
+.cadastro{
+    grid-area: cadastro;
+    display: flex;
+    align-items: center;
+}
+
+.cadastro .informacoes{
+    max-width: 550px;
+  
+}
+.cadastro .informacoes p{
+    margin: 20px 0;
+    font-size: 1.6rem;
+}
+
+.cadastro .informacoes h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+
+.cadastro .informacoes a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    width: 150px;
+    color: hsl(228, 45%, 44%);
+    padding: 10px 40px;
+    border-radius: 50px;
+    box-shadow:0px 2px 8px  black;
+    transition: 0.3s;
+}
+
+.cadastro .informacoes a:hover{
+    color: white;
+    background-color: hsl(300, 69%, 71%) ;
+}
+
+.footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 0 40px 30px 0;
+
+}
+
+.footer a {
+    display: inline-block;
+    font-size: 1.6rem;
+    margin: 0 5px;
+    border: 1px solid;
+    padding: 5px 10px;
+    border-radius: 50%;
+    color: hsl(228, 45%, 44%);
+    transition: 0.3s;
+}
+
+.footer a:hover{
+    color: violet ;
+}
+
+.footer a:first-child{
+    padding: 5px 12px;
+}
+
+
+
+
